@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="  vh-100 d-flex flex-wrap align-items-start justify-content-center position-relative">
+        <nav class="container-fluid navbar navbar-expand-sm  fixed-top w-100  navbar-light bg-light">
+           <div class=" container">
+                <a class="navbar-brand fw-bold" href="#">Navbar</a>
+                <!-- <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavId">
+                   
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0 fw-bold ">
+               
+                        <li class="nav-item">
+                            <a class="nav-link">salad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">pizza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">pasta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">kebab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">turkey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">ice cream</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">mango</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">cake</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">chocolate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">chicken</a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </nav>
+        <div class="searchInput position-absolute w-75 m-auto p-5 ">
+            <div class="row no-gutters">
+                <div class="col-md-10">
+                    <input id="searchInput" placeholder="search recipes" class="form-control" type="text" />
+                </div>
+                <div class="col-md-2">
+                    <button id="searchBtn" class="btn btn-block text-white btn-mine">
+                        search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="recipesSearch" class="text-center py-5">
+        <div class="container-fluid py-5">
+            <h2>Recipe Categories</h2>
+            <p class="lead">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br />
+                sed tincidunt ut laoreet dolore magna aliquam erat volutpat lorem
+            </p>
+
+            <div class="row my-5">
+                <div class="col-md-3 ">
+                    <div class="category">
+                        <h3 class="font-weight-bolder">Meal Type</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category">
+                        <h3 class="font-weight-bolder">Diet & Health</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category">
+                        <h3 class="font-weight-bolder">Ingredient</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category">
+                        <h3 class="font-weight-bolder">Dish Type</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-left">
+
+
+            <div class="row" id="rowData">
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Meal Ingredients</h5>
+                    <button type="button" class="btn-close closeBtn"  aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="modalBody"></div>
+                    <ul id="ulData" class=" list-unstyled mt-3"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closeBtn" >Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
